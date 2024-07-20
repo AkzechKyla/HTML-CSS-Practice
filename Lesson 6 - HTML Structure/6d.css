@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    font-family: "Montserrat";
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+p {
+    text-align: center;
+    font-family: "Montserrat";
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+span {
+    text-decoration: underline;
+}
