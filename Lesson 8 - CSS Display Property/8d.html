@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+
+    <style>
+        input {
+            font-size: 16px;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        .first-name,
+        .last-name {
+            padding: 7px 8px 7px 8px;
+            width: 120px;
+            border: 1px solid;
+            border-color: #757575;
+            border-radius: 3px;
+        }
+
+        .email {
+            display: block;
+            border: 1px solid;
+            border-radius: 3px;
+            border-color: #757575;
+            padding: 7px 8px 7px 8px;
+            width: 261px;
+        }
+
+        .sign-up {
+            color: white;
+            background-color: #3975E9;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            width: 278px;
+            padding: 10px 8px 10px 8px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+        }
+
+        .sign-up:hover {
+            opacity: 0.8;
+        }
+
+        .sign-up:active {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <input class="first-name" type="text" placeholder="First name">
+    <input class="last-name" type="text" placeholder="Last name">
+    <input class="email" type="text" placeholder="Email">
+    <button class="sign-up">Sign Up</button>
+</body>
+</html>
