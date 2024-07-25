@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+
+    <style>
+        .friend-suggestions {
+            display: inline-block;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            margin-left: 5px;
+            margin-bottom: 3px;
+        }
+
+        .fb-name {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .mutual-info {
+            margin-bottom: 3px;
+        }
+
+        .mutual-count {
+            font-size: 13px;
+            color: #606060;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: -3px;
+            margin-top: 2.5px;
+        }
+
+        .suggested-friend {
+            display: inline-block;
+            /* border: 1px solid; */
+            box-shadow: 0px 0px 8px -3px rgba(0,0,0,0.8);
+            padding: 0px 0px 10px 0px;
+            margin-right: 10px;
+        }
+
+        .mutual-friend {
+            display: inline-block;
+        }
+
+        .mutual-friend img {
+            width: 20px;
+            border-radius: 100%;
+            margin-left: 5px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 5px;
+        }
+
+        .add-btn {
+            background-color: #3975EB;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 5px 10px 5px 10px;
+            margin-left: 5px;
+            user-select: none;
+            cursor: pointer;
+            display: block;
+        }
+
+        .add-btn:hover {
+            background-color: #3770e1;
+        }
+    </style>
+</head>
+<body>
+    <div class="friend-suggestions">
+        <div class="suggested-friend">
+            <div>
+                <img class="profile-image" src="https://media.tenor.com/notUnAjgm8UAAAAM/beluga-cat-meme.gif">
+            </div>
+            <div>
+                <div><p class="fb-name">Beluga</p></div>
+                <div class="mutual-info">
+                    <div class="mutual-friend">
+                        <img src="img/epic-cato.png">
+                    </div>
+                    <div class="mutual-count">
+                        <p>2 mutual friends</p>
+                    </div>
+                </div>
+                <div><button class="add-btn">Add Friend</button></div>
+            </div>
+        </div>
+
+        <div class="suggested-friend">
+            <div>
+                <img class="profile-image" src="https://pbs.twimg.com/media/GFpyGffWIAAawRM.jpg">
+            </div>
+            <div>
+                <div><p class="fb-name">Luna</p></div>
+                <div class="mutual-info">
+                    <div class="mutual-friend">
+                        <img src="img/epic-cato.png">
+                    </div>
+                    <div class="mutual-count">
+                        <p>3 mutual friends</p>
+                    </div>
+                </div>
+                <div><button class="add-btn">Add Friend</button></div>
+            </div>
+        </div>
+
+        <div class="suggested-friend">
+            <div>
+                <img class="profile-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Kd0Ui9kRvnV92LjRCSKUwTR-0yjUp3H79Q&s">
+            </div>
+            <div>
+                <div><p class="fb-name">MAEW</p></div>
+                <div class="mutual-info">
+                    <div class="mutual-friend">
+                        <img src="img/epic-cato.png">
+                    </div>
+                    <div class="mutual-count">
+                        <p>4 mutual friends</p>
+                    </div>
+                </div>
+                <div><button class="add-btn">Add Friend</button></div>
+            </div>
+        </div>
+
+        <div class="suggested-friend">
+            <div>
+                <img class="profile-image" src="img/catmoo.jpg">
+            </div>
+            <div>
+                <div><p class="fb-name">Cat Moo</p></div>
+                <div class="mutual-info">
+                    <div class="mutual-friend">
+                        <img src="img/epic-cato.png">
+                    </div>
+                    <div class="mutual-count">
+                        <p>4 mutual friends</p>
+                    </div>
+                </div>
+                <div><button class="add-btn">Add Friend</button></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
