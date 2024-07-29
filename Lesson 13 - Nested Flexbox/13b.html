@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nested Flexbox Practice</title>
+
+        <style>
+            .container {
+                display: flex;
+                flex-direction: row;
+                height: 50px;
+            }
+
+            .container > :nth-child(1) {
+                background-color: lightpink;
+                width: 100px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container > :nth-child(2) {
+                background-color: lightblue;
+                width: 200px;
+            }
+
+            .container > :nth-child(2) > :nth-child(2) {
+                display: flex;
+                justify-content: space-between;
+                width: 200px;
+            }
+
+            .container > :nth-child(2) > :nth-child(2) > div {
+                color: white;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div></div>
+            <div>
+                <div>row1</div>
+                <div>
+                    <div class="row-2">row2</div>
+                    <div class="row-2">row2</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
