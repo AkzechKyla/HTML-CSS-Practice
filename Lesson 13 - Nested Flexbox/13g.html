@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+
+    <style>
+        .tweet-container {
+            display: flex;
+            width: 400px;
+        }
+
+        .icon-section {
+            margin-right: 10px;
+        }
+
+        .icon-section img {
+            height: 50px;
+            border-radius: 100%;
+        }
+
+        p, span {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.875rem;
+            margin: 0;
+            line-height: 20px;
+            display: inline-block;
+        }
+
+        .twitter-name {
+            font-weight: bold;
+        }
+
+        .twitter-username {
+            color: rgb(98, 98, 98);
+        }
+
+        .link-embed-container {
+            border: 1px solid;
+            display: flex;
+            border-radius: 20px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            border-color: rgb(188, 188, 188);
+        }
+
+        .thumbnail-container {
+            background-color: rgb(188, 188, 188);
+            width: 90px;
+            height: 80px;
+            border-top-left-radius: 18px;
+            border-bottom-left-radius: 18px;
+            flex-shrink: 0;
+        }
+
+        .link-embed-info {
+            margin-left: 10px;
+        }
+
+        .link {
+            color: rgb(98, 98, 98);
+        }
+    </style>
+</head>
+<body>
+    <div class="tweet-container">
+        <div class="icon-section">
+            <img src="img/catmoo.jpg">
+        </div>
+        <div class="tweet-section">
+            <p class="twitter-name">Moo Cat</p>
+            <span class="twitter-username">&#64;mooooo</span>
+            <p class="tweet-content">What is backend web development? A purr-fectly complete overview. Meow video is up!</p>
+            <div class="link-embed-container">
+                <div class="thumbnail-container">
+                    <!--Feel free to add image thumbnail-->
+                </div>
+                <div class="link-embed-info">
+                    <p class="link">youtube.com</p>
+                    <p class="link-title">Backend web development - a complete overview (2021)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
