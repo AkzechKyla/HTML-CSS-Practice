@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Clone</title>
+
+    <script src="https://kit.fontawesome.com/2d9ebf1f47.js" crossorigin="anonymous"></script>
+
+    <style>
+        p, span {
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+            margin: 0;
+            line-height: 35px;
+            font-size: 16px;
+        }
+
+        .icon-sidebar {
+            background-color: #202226;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 70px;
+            z-index: 1;
+            padding-top: 20px;
+        }
+
+        .icon-sidebar img {
+            width: 50px;
+            border-radius: 100%;
+            margin-top: 10px;
+        }
+
+        .server-sidebar {
+            background-color: #2B2D30;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 200px;
+            padding-top: 20px;
+            padding-left: 90px;
+            padding-right: 20px;
+            z-index: 0;
+        }
+
+        .server-category {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-name {
+            font-weight: bold;
+            color: rgb(200, 200, 200);
+            user-select: none;
+        }
+
+        .add-category {
+            color: gray;
+            cursor: pointer;
+        }
+
+        .server-channel {
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="icon-sidebar">
+        <img src="img/adoptedcat.webp">
+        <img src="img/catmoo.jpg">
+        <img src="img/epic-cato.png">
+    </div>
+    <div class="server-sidebar">
+        <div class="server-category">
+            <p class="category-name">INFO</p>
+            <i class="fa-solid fa-plus add-category"></i>
+        </div>
+        <div class="server-channels">
+            <p class="server-channel"><span class="channel-asterisk">#</span> new-videos</p>
+            <p class="server-channel"><span class="channel-asterisk">#</span> updates</p>
+            <p class="server-channel"><span class="channel-asterisk">#</span> faq</p>
+        </div>
+    </div>
+</body>
+</html>
