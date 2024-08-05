@@ -10,16 +10,86 @@
                 background-image: url('v1023-028-c.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
+                font-family: 'Arial', sans-serif;
             }
 
             .container {
-                background-color: white;
+                background-color: lightblue;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+            }
+
+            .hour-indicators {
+                /* background-color: lightblue; */
+                display: inline-flex;
+                flex-direction: column;
+                width: 50px;
+                /* box-shadow: 1px 0px 0px 0px #555; */
+                padding-right: 10px;
+                margin-bottom: -6px;
+            }
+
+            .hour {
+                font-size: 14px;
+                color: #555;
+                text-align: right;
+                height: 30px;
+            }
+
+            .hour-lines {
+                position: relative;
+                width: 100%;
+                margin-top: -6px;
+                margin-left: 0.5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .hour-line {
+                position: relative;
+                background-color: #555;
+                height: 1px;
+                width: 100%;
             }
         </style>
     </head>
     <body>
         <div class="container">
-
+            <div class="hour-indicators">
+                <div class="hour">9 AM</div>
+                <div class="hour">10 AM</div>
+                <div class="hour">11 AM</div>
+                <div class="hour">12 PM</div>
+                <div class="hour">1 PM</div>
+                <div class="hour">2 PM</div>
+                <div class="hour">3 PM</div>
+                <div class="hour">4 PM</div>
+                <div class="hour">5 PM</div>
+                <div class="hour">6 PM</div>
+                <div class="hour">7 PM</div>
+                <div class="hour">8 PM</div>
+                <div class="hour">9 PM</div>
+                <div class="hour">10 PM</div>
+            </div>
+            <div class="hour-lines">
+                <div class="hour-line"></div>
+                <div class="hour-line"></div>
+                <div class="hour-line"></div>
+                <div class="hour-line"></div>
+                <div class="hour-line"></div>
+                <div class="hour-line"></div>
+                <div class="hour-line"></div>
+                <div class="hour-line"></div>
+                <div class="hour-line"></div>
+                <div class="hour-line"></div>
+                <div class="hour-line"></div>
+                <div class="hour-line"></div>
+                <div class="hour-line"></div>
+                <div class="hour-line"></div>
+            </div>
         </div>
     </body>
 </html>
