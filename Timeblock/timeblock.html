@@ -18,10 +18,10 @@
                 display: flex;
                 flex-direction: row;
                 position: relative;
+                width: 750px;
             }
 
             .hour-indicators {
-                /* background-color: lightblue; */
                 display: inline-flex;
                 flex-direction: column;
                 width: 50px;
@@ -42,6 +42,7 @@
                 width: 100%;
                 margin-top: -6px;
                 margin-left: 0.5px;
+                margin-right: 10px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
@@ -53,6 +54,65 @@
                 background-color: #555;
                 height: 1px;
                 width: 100%;
+            }
+
+            .schedule {
+                /* background-color: black; */
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 0;
+                left: 55px;
+                padding: 9.5px;
+                /* max-width: 900px; */
+                /* margin: 0 auto;
+                padding: 10px; */
+                /* border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+            }
+
+            .block {
+                background-color: #ead6fc;
+                padding: 5px;
+                margin-bottom: 2px;
+                border-radius: 10px;
+                height: auto; /* Dynamic height */
+                box-sizing: border-box;
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                text-overflow: ellipsis;
+            }
+
+            .block:nth-child(odd) {
+                background-color: #f7e9fd;
+            }
+
+            .block:nth-child(even) {
+                background-color: #ead6fc;
+            }
+
+            .time {
+                font-size: 14px;
+                color: #555;
+                font-weight: bold;
+            }
+
+            #task-3 {
+                background-color: pink;
+                height: 57px;
+            }
+
+            .description {
+                font-family: 'Arial', sans-serif;
+                font-size: 16px;
+                /* margin-left: 10px; */
+                color: #333;
+                overflow: hidden; /* Hide overflowing text */
+                white-space: nowrap; /* Prevent wrapping */
+                text-overflow: ellipsis; /* Add ellipsis for overflow text */
             }
         </style>
     </head>
@@ -89,6 +149,48 @@
                 <div class="hour-line"></div>
                 <div class="hour-line"></div>
                 <div class="hour-line"></div>
+            </div>
+            <div class="schedule">
+                <div class="block">
+                    <div class="description">Task</div>
+                    <div class="time">9:00 AM - 10:00 AM</div>
+                </div>
+                <div class="block">
+                    <div class="description">Task</div>
+                    <div class="time">10:00 AM - 11:00 AM</div>
+                </div>
+                <div class="block" id="task-3">
+                    <div class="description">Task</div>
+                    <div class="time">11:00 AM - 1:00 PM</div>
+                </div>
+                <div class="block">
+                    <div class="description">Task</div>
+                    <div class="time">10:00 AM - 11:00 AM</div>
+                </div>
+                <div class="block">
+                    <div class="description">Task</div>
+                    <div class="time">10:00 AM - 11:00 AM</div>
+                </div>
+                <div class="block" id="task-3">
+                    <div class="description">Task</div>
+                    <div class="time">11:00 AM - 1:00 PM</div>
+                </div>
+                <div class="block" id="task-3">
+                    <div class="description">Task</div>
+                    <div class="time">11:00 AM - 1:00 PM</div>
+                </div>
+                <div class="block" id="task-3">
+                    <div class="description">Task</div>
+                    <div class="time">11:00 AM - 1:00 PM</div>
+                </div>
+                <div class="block">
+                    <div class="description">Task</div>
+                    <div class="time">9:00 AM - 10:00 AM</div>
+                </div>
+                <div class="block">
+                    <div class="description">Task</div>
+                    <div class="time">9:00 AM - 10:00 AM</div>
+                </div>
             </div>
         </div>
     </body>
