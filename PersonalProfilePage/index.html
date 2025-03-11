@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        header, nav, main, footer {
+            padding: 6px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+
+        /* table {
+            width: 60%;
+            font-size: 0.9em;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+            border: 1px solid black;
+            text-align: left;
+        } */
+
+        .site-page {
+            width: 100%;
+            max-width: 30rem;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 1rem 1.25rem 1rem 1rem;
+            position: relative;
+            background-color: rgb(0 0 0 / 1);
+            color: rgb(255 255 255 / 1);
+            box-shadow: inset 0 0 0 1px #000,inset 0 0 0 3px #fff;
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #ccc;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            background-color: rgb(0 0 0 / 1);
+            color: rgb(255 255 255 / 1);
+            box-shadow: inset 0 0 0 1px #000,inset 0 0 0 3px #fff;
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #ccc;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: x-small;
+        }
+
+        .content {
+            text-align: left;
+        }
+
+        .text-content {
+            font-size: smaller;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Kyla Morcillos</h1>
+            <p id="description">BS Computer Science Student | Aspiring Developer</p>
+        </header>
+
+        <nav>
+            <button class="nav-item">ABOUT</button>
+            <button class="nav-item">CHANGELOGS</button>
+            <button class="nav-item">PROJECTS</button>
+            <button class="nav-item">SKILLS</button>
+        </nav>
+
+        <main>
+            <section class="site-content">
+                <div class="site-page">
+                    <div id="about" class="content">
+                        <h2>About Me</h2>
+                        <p class="text-content">I'm Kyla, a 3rd-year BSCS student who loves learning something new every day—whether it's about making my code cleaner and more efficient or a cool keyboard shortcut I wish I had known sooner. I enjoy planning and building personal projects (whether I finish them is another story) and like keeping up my GitHub daily streak by coding and committing every day. When I&#39m not coding, you&#39ll probably find me playing games, binge-watching an entire anime season in a day, annoying my cats until they scratch me, or screaming over the appearance of handsome characters in the manhwas I'm reading.</p>
+                    </div>
+                    <div id="about" class="content">
+                        <p class="text-content">
+                            👨‍💻 <strong>Name:</strong> Kyla Franchezka L. Morcillos <br>
+                            🛠️ <strong>Specialty:</strong> Frontend Development <br>
+                            📦 <strong>Favorite Language:</strong> JavaScript/TypeScript <br>
+                            🚀 <strong>Favorite Framework:</strong> React <br>
+                            🎮 <strong>Favorite Game:</strong> Visual Novels <br>
+                            😸 <strong>Favorite Animal:</strong> Cats <br>
+                            🛠️ <strong>Go-To Debugging Strategy:</strong> Google → Stack Overflow → AI → Trial & Error → Crying → Eureka! <br>
+                            🚨 <strong>Biggest Debugging Moment:</strong> When I realized I used the wrong variable name <br>
+                            💬 <strong>Most Used Programming Quote:</strong> “It works on my machine.” <br>
+                            💢 <strong>Most Hated Bug:</strong> CORS policy <br>
+                            🔍 <strong>Most Used Google Search:</strong> How to center a div <br>
+                            🌟 <strong>Biggest Win:</strong> When my code works on the first try (rare event) <br>
+                            🌤️ <strong>Life Motto:</strong> Don't put off something you can do in 10 seconds. <br>
+                            🎯 <strong>Dream Goal:</strong> To be an Indie Game Developer <br>
+                        </p>
+                    </div>
+
+                    <div id="skills" class="content">
+                        <h2>Skills</h2>
+                        <table class="text-content">
+                            <tr>
+                                <th>Category</th>
+                                <th>Skills</th>
+                            </tr>
+                            <tr>
+                                <td>Languages</td>
+                                <td>C, C#, Python, Java, HTML, CSS, JavaScript, TypeScript, Shell</td>
+                            </tr>
+                            <tr>
+                                <td>Frameworks & Libraries</td>
+                                <td>React.js, ASP.NET, TailwindCSS</td>
+                            </tr>
+                            <tr>
+                                <td>Databases</td>
+                                <td>SQL, Firebase</td>
+                            </tr>
+                            <tr>
+                                <td>Version Control & Collaboration</td>
+                                <td>Git, GitHub</td>
+                            </tr>
+                            <tr>
+                                <td>Operating Systems & Tools</td>
+                                <td>Linux, Tmux, Bash Scripting</td>
+                            </tr>
+                            <tr>
+                                <td>IDEs</td>
+                                <td>Visual Studio Code, Sublime Text</td>
+                            </tr>
+                            <tr>
+                                <td>Development & Documentation</td>
+                                <td>Jupyter Notebook, Markdown</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:kyla@example.com">kyla@example.com</a></p>
+            <p>GitHub: <a href="https://github.com/kyla" target="_blank">github.com/kyla</a></p>
+        </footer>
+    </div>
+</body>
+</html>
