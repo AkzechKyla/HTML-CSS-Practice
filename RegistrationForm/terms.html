@@ -4,14 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Terms & Conditions</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <style>
             * {
+                margin: 0;
+                padding: 0;
                 box-sizing: border-box;
                 font-family: "Poppins", sans-serif;
             }
 
             body {
+                color: #fff;
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 min-height: 100vh;
@@ -20,61 +27,68 @@
                 background-size: cover;
             }
 
-            .container {
-                width: 500px;
+            .terms-and-conditions {
+                width: 480px;
                 color: #fff;
                 border-radius: 10px;
                 background: transparent;
                 border: 2px solid rgba(255, 255, 255, .2);
                 backdrop-filter: blur(20px);
                 box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-                padding: 10px 25px 20px 25px;
-                justify-content: center;
+                padding: 15px;
+                text-align: justify;
+                overflow-y: auto;
+                max-height: 80vh;
             }
 
             h2 {
                 text-align: center;
+                margin-bottom: 10px;
             }
 
             p {
+                margin-bottom: 10px;
+            }
+
+            p:last-of-type {
                 margin-top: 10px;
-                line-height: 1.6;
             }
 
-            .button-container {
-                text-align: center;
-                margin-top: 20px;
+            a {
+                color: #fff;
             }
 
-            button {
-                padding: 10px 20px;
-                background: blue;
-                color: white;
-                border: none;
-                cursor: pointer;
+            footer {
+                margin-top: 12px;
             }
         </style>
     </head>
     <body>
-        <div class="container">
-            <h2>Terms & Conditions</h2>
+        <main>
+            <section class="terms-and-conditions">
+                <h2>Terms & Conditions</h2>
+                <p>Welcome to our service. By registering, you agree to the following terms:</p>
 
-            <p>By accessing and using this website, you agree to comply with the following terms and conditions. If you do not agree, please refrain from using the site.</p>
+                <h3>1. Account Responsibility</h3>
+                You are responsible for maintaining the confidentiality of your account credentials and any activity that occurs under your account.</p>
 
-            <h3>1. Use of the Website</h3>
-            <p>You may use this website for personal and non-commercial purposes only. Any unauthorized use, reproduction, or modification of the content is prohibited.</p>
+                <h3>2. Acceptable Use</h3>
+                You agree not to use our service for any illegal activities, spamming, or distribution of harmful content.</p>
 
-            <h3>2. User Responsibilities</h3>
-            <p>You agree to provide accurate information when registering. Any misuse, fraudulent activity, or attempt to compromise security may result in termination of access.</p>
+                <h3>3. Data Privacy</h3>
+                Your data is stored securely and will not be shared with third parties without your consent, except as required by law.</p>
 
-            <h3>3. Privacy Policy</h3>
-            <p>We collect and store user data in compliance with our Privacy Policy. Your personal information will not be shared without your consent, except as required by law.</p>
+                <h3>4. Service Availability</h3>
+                We do not guarantee uninterrupted access to our service and may modify or discontinue it at any time without notice.</p>
 
-            <h3>4. Liability Disclaimer</h3>
-            <p>We are not responsible for any direct or indirect damages arising from your use of this website. We provide no guarantees regarding website functionality or content accuracy.</p>
+                <h3>5. Termination</h3>
+                We reserve the right to terminate accounts that violate our policies or engage in prohibited activities.</>
 
-            <h3>5. Changes to Terms</h3>
-            <p>We reserve the right to modify these terms at any time. Continued use of the website after updates constitutes acceptance of the revised terms.</p>
-        </div>
+                <p>By continuing to use our service, you agree to these Terms & Conditions. If you do not agree, please discontinue use immediately.</p>
+            </section>
+        </main>
+        <footer>
+            <a href="form.html">Back to Registration Form</a>
+        </footer>
     </body>
 </html>
