@@ -20,21 +20,25 @@
                 justify-content: center;
                 align-items: center;
                 min-height: 100vh;
-                background-color: #f4f4f4;
                 font-size: small;
+                background: url('starry-purple-night-sky.png') no-repeat center center;
+                background-size: cover;
             }
 
             .container {
                 width: 340px;
-                background-color: blueviolet;
                 color: #fff;
-                border-radius: 8px;
+                border-radius: 10px;
+                background: transparent;
+                border: 2px solid rgba(255, 255, 255, .2);
+                backdrop-filter: blur(20px);
+                box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+                padding: 10px 25px 20px 25px;
             }
 
             form {
                 display: flex;
                 flex-direction: column;
-                padding: 10px 25px 20px 25px;
                 gap: 7px;
             }
 
@@ -42,6 +46,14 @@
                 display: block;
                 font-size: small;
                 width: 100%;
+            }
+
+            a {
+                color: #fff;
+            }
+
+            input {
+                border-radius: 20px;
             }
 
             .gender-buttons {
@@ -53,12 +65,19 @@
 
             .checkbox-label {
                 display: flex;
+                justify-content: center;
                 align-items: center;
                 gap: 5px;
             }
 
+            .submit-btn {
+                height: 40px;
+                border-radius: 40px;
+                cursor: pointer;
+            }
+
             #terms {
-                width: 0;
+                width: auto;
             }
 
         </style>
@@ -113,11 +132,11 @@
                     </div>
 
                     <label class="checkbox-label">
-                        <input type="checkbox" id="terms" required> ✅I agree to the
+                        <input type="checkbox" id="terms" required> I agree to the
                         <a href="terms.html" target="_blank">Terms & Conditions</a>
                     </label>
 
-                    <button type="submit">Register</button>
+                    <button class="submit-btn" type="submit">Register</button>
                 </form>
             </div>
         </main>
