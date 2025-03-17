@@ -108,7 +108,7 @@
 
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" required minlength="8">
+                        <input type="password" id="password" name="password" required minlength="8" pattern="^(?=.*[0-9])(?=.*[\W_]).{8,}$">
                         <div id="passwordError" class="error"></div>
                     </div>
 
