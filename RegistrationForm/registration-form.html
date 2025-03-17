@@ -178,14 +178,14 @@
                     confirmPasswordError.textContent = "";
                 }
 
-                // Date of Birth validation (must be 18+)
-                const dob = new Date(document.getElementById('dob').value);
+                // Date of Birth validation
+                const dobInput = document.getElementById('dob').value;
+                const dob = new Date(dobInput);
                 const today = new Date();
-                const age = today.getFullYear() - dob.getFullYear();
-                if (today.setFullYear(today.getFullYear() - age) < dob.setFullYear(dob.getFullYear())) {
-                    age--;
-                }
-                if (age < 18) {
+                const minAgeDate = new Date();
+                minAgeDate.setFullYear(today.getFullYear() - 18);
+
+                if (dob > minAgeDate) {
                     document.getElementById('dobError').textContent = "You must be at least 18 years old.";
                     valid = false;
                 } else {
